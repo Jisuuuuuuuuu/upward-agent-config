@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "project": "Upward · 向上",
+  "purpose": "课程过程资料：研究访谈 Agent 配置与数据集归档",
+  "skill": {
+    "archive": "Skill.zip",
+    "archive_root": "脊柱侧弯研究访谈_Skill",
+    "entrypoint": "SKILL.md",
+    "package_version": "1.0.0",
+    "files": [
+      "SKILL.md",
+      "assets/evidence_ledger.template.csv",
+      "assets/identity_card.json",
+      "assets/interview_protocol.json",
+      "assets/session_log.template.json",
+      "assets/source_manifest.json",
+      "assets/source_manifest.template.json",
+      "assets/synthetic_demo.json",
+      "package.json",
+      "scripts/build_evidence_ledger.py",
+      "scripts/validate_session.py",
+      "scripts/verify_sources.py"
+    ],
+    "requirements": {
+      "runtime": "Python 3",
+      "excel_dependency": "openpyxl",
+      "raw_sources_included": false,
+      "cleaned_evidence_index_included": false
+    }
+  },
+  "dataset": {
+    "path": "sft_dataset.json",
+    "encoding": "UTF-8",
+    "split_counts": {
+      "train": 480,
+      "validation": 79,
+      "test": 30
+    },
+    "splits_key": "splits",
+    "training_split": "train",
+    "validation_split": "validation",
+    "held_out_split": "test"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "files": {
+      "Skill.zip": "6931c9801508acad9e6780695fdf1bf51b18ce410b05797454c019e52a11e1fa",
+      "sft_dataset.json": "18396304d5d1f4b5d77625d550c900dc6da1d7390278d06dfbf661035769ee6e"
+    }
+  }
+}
